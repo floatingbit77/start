@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--	Author: 	Elizabeth Taylor
+		Date:		August 24, 2020
+		File:		index.html
+		Purpose: 	First web page of the jewelry business 
+-->
+
+<html>
+<head>
+<style>
+    img{
+        float: top;
+    }
+    .container{
+        width: 700px;
+        height: 75px;
+        background-color: lightcyan;
+        text-align: center;
+    }
+    .container2{
+        width: 700px;
+        height: 60px;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+    .heading1{
+        font-family: 'Courier New';
+        color: gray;
+    }
+    table{
+        border-collapse: collapse;
+        
+    }
+    td, th{
+        border: 1px solid #999;
+        padding: 10px;
+        background-color: antiquewhite;
+        font-family: 'Courier New';
+        
+    }
+    .center{
+        color: gray;
+    }
+    .content{
+        max-width: 750px;
+        margin: auto;
+    }
+    a{
+        color: cyan;
+        font-family: 'Courier New';
+    }
+    </style>
+	
+</head>
+<body>
+<div class= "content">
+    <title>Jewelry Business</title>
+    <div class='container2'>
+         <h1 class='heading1'> AbsJewels: Handmade Jewelry</h1></div>
+    <img src = "bannerPic.jpg" alt = "my image" style= "height: 300px; width: 500px; padding-right: 100px; padding-left: 100px;"/>
+    
+    <div class='container'>
+        <h1 class='heading1'>Handmade jewelry that is best suited for your creativity. </h1></div>
+    <div class='container2'>
+        <h2 class='heading1'>Submit an image or idea of a ring, necklace, or earring that you like.</h2></div>
+    <div class='container2'>
+        <h3 class='heading1'>My designs start with copper, gold, silver, and bronze wire.</h3> <h3 class='heading1'>Adding crystals and other jewels make it creative and unique.</h3></div> <br/><br/>
+        <h2 class="heading1">Table of prices for various handmade services</h2>
+
+	<table border = "2"; style="width:700px;">
+		<tr><th class="center">Type</th>
+			<th class="center">Basic Wire Wrap</th>
+			<th class="center">With Crystal or Gemstone</th>
+            <th class="center">With 2 Crystals or Additional Gemstones </th>
+		</tr>
+		<tr>	<td class="center">Rings</td>
+			<td class="center">$10-15</td>
+			<td class ="center">$15-20</td>
+            <td class ="center">$25-30</td>
+		</tr>
+		<tr>	<td class="center">Necklaces</td>
+			<td class ="center">$20-25</td>
+			<td class ="center">$30-35</td>
+            <td class ="center">$40-45</td>
+		</tr>
+		<tr>	<td class="center">Earrings</td>
+			<td class ="center">$10-15</td>
+			<td class ="center">$20-25</td>
+            <td class ="center">$35-40</td>
+		</tr>
+	</table>
+    <br/>
+    <br/>
+    <br/>
+    <p>
+    <a href = "jpics.html">Click here to see some examples</a></p>
+    
+    <h2 class="heading1">Price Approximation Calculator</h2>
+
+	<h4 class="heading1">Fill in the table to see possible prices for each item</h4>
+    
+    <form action="main.php" name="" method= "post">
+	<table border = "2"; style="width:700px";>
+
+		<tr><th class="center">Type</th>
+            <th class="center">Enter # of Crystals or Jewels</th>
+			<th class="center">Enter # of Smaller Additional Jewels</th>
+            <th class="center">Click for Pricing</th>
+		</tr>
+		<tr>	<td class="center">Rings</td>
+            <td><input type="test" name="gemstones1" value=0></td>
+            <td><input type="test" name="jewels1" value=0></td>
+            <td><input type="submit" value="get price" name="opt1" /></td>      
+		</tr>
+
+		<tr>	<td class="center">Necklaces</td>
+            <td><input type="test" name="gemstones2" value=0></td>
+            <td><input type="test" name="jewels2" value=0></td>
+            <td><input type="submit" value="get price" name = "opt2"/></td>
+
+		</tr>
+        
+        <tr>	<td class="center">Earrings</td>
+            <td><input type="test" name="gemstones3" value=0></td>
+            <td><input type="test" name="jewels3" value=0></td>
+            <td><input type="submit" value="get price" name="opt3" /></td>
+		</tr>
+
+	</table>
+    </form>
+    
+    </div>
+</body>
+</html>
